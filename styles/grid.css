@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**************************** Click Grid *******************************/
+td.gridFirstCell {
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	font-size: 17px;
+	font-weight: bold;
+	color: #6a2b26;
+	text-align: right;
+	font-weight: bold;
+	padding:5px 30px 5px 5px;
+	border-bottom: 4px solid #9a342f;
+}
+
+td.colLeft {
+	background-color: #f7fbfe;
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	font-size: 17px;
+	font-weight: bold;
+	color:#1a5885;
+	border-bottom: 1px solid #fce589;
+	margin-left: 10px;
+	padding:10px 50px 10px 5px;
+	text-align: right;
+}
+
+td.top {
+	background-color: #f7fbfe;
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	font-size: 17px;
+	font-weight: bold;
+	color:#1a5885;
+	text-align: center;
+	padding: 5px 10px;
+	border-bottom: 4px solid #1a5885;
+}
+
+td.left_bottom {
+	background-color: #f7fbfe;
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	font-size: 17px;
+	font-weight: bold;
+	color:#1a5885;
+	text-align: right;
+	padding:10px 50px 10px 5px;
+	border-bottom: 5px solid #fce589;
+}
+
+td.bottom {
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	font-size: 17px;
+	font-weight: bold;
+	color:#1a5885;
+	text-align: center;
+	padding: 10px;
+	border-bottom: 5px solid #fce589;
+}
+
+td.other {
+	border-collapse:collapse;
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	text-align:center;
+	font-size: 17px;
+	font-weight: normal;
+	color:#1a5885;
+	padding: 10px;
+	border-bottom: 1px solid #fce589;
+}
+
+td.other_ta {
+	border-collapse:collapse;
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	text-align:center;
+	font-size: 14px;
+	font-weight: normal;
+	color:#1a5885;
+	padding: 2px;
+	border-bottom: 1px solid #fce589;
+}
+
+td.spacer {
+	height: 2px;
+	background-color: #ff;
+	border-bottom: 1px solid #fce589;
+}
+
+span.spacer {
+	line-height:3px;
+}
+
+/**************************** End of Click Grid *******************************/
+

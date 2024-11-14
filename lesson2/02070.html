@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../styles/disney.css" />
+<link rel="stylesheet" type="text/css" href="../shadowbox/shadowbox.css">
+<script type="text/javascript" src="../shadowbox/shadowbox.js"></script>
+<script type="text/javascript" src="../scripts/disney_content.js"></script>
+<script type="text/javascript" src="../scripts/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="../scripts/jqFunctions.js"></script>
+<title>Veteran Centered Care</title>
+<script type="text/javascript" src="../scripts/wz_dragdrop.js"></script>
+<script type="text/javascript" src="../scripts/DD_BuildList.js"></script>
+
+<script type="text/javascript">
+	blnLastPage = true;
+	blnAudio = false;
+	nextPg = "../menu.html";
+	backPg = "02060.html";
+
+	function goNext() {
+		nextToMenu = true;
+		parent.gotoPage(nextPg);
+	}
+	
+	function goBack() {
+		parent.gotoPage(backPg);
+	}
+	
+	function initializePage() {
+	}
+</script>
+</head>
+
+<body onload="initializePage()">
+<div id="container">
+
+<div id="lessonTitle">
+<div id="ltImg" style="position:absolute; top:0px;"><img src="../sysimages/title_less2.png" width="188" height="28" alt="Veteran Centered Care" /></div>
+</div>
+  
+<div id="pgTitle" style="position:absolute; left:51px; top:117px; width:400px; height:30px;"><h1 class="pgTitle">Knowledge Check</h1></div>
+
+<div id="txt" style="position:absolute; left:51px; top:156px; width:447px; height:70px;">
+  <p>Which of the following factors are similarities between Disney and VISN 18?  Build a list of similarities by dragging the appropriate items to the list on the right.</p>
+</div>
+
+<div id="targetHolder" style="position:absolute; top:85px; left:525px; height:404px; width:389px; background-color:#FFF">
+  <img src="images/02070a.png" width="388" height="437" alt="Background graphic of an unrolled scroll." />
+  <!--=========== Target layers ===========-->
+  <div id="target1" style="position:absolute; top:141px; left:85px; height:40px; width:188px;"></div>
+  <div id="target2" style="position:absolute; top:195px; left:85px; height:40px; width:187px;"></div>
+  <div id="target3" style="position:absolute; top:250px; left:85px; height:37px; width:189px;"></div>
+  <div id="target4" style="position:absolute; top:303px; left:85px; height:40px; width:188px;"></div>
+  
+</div>
+
+<!--=========== Drag items layers ===========-->
+<div id="dragHolder" style="position:absolute; top:244px; left:101px; height:228px; width:291px;">
+  <img src="images/02070f.png" width="201" height="203" />
+  <div id="drag1" style="position:absolute; left:40px; top:7px; width:79px; height:30px; z-index:3;">
+    <img name="img1" src="images/02070b.png" width="79" height="30" border="0" alt="staffing" /></div>
+    
+  <div id="drag2" style="position:absolute; left:39px; top:61px; width:111px; height:30px; z-index:3;">
+    <img name="img2" src="images/02070c.png" width="111" height="30" border="0" alt="Right-sizing" /></div>
+    
+  <div id="drag3" style="position:absolute; left:39px; top:117px; width:146px; height:26px; z-index:3;">
+    <img name="img3" src="images/02070d.png" width="146" height="26" border="0" alt="Internal Politics" /></div>
+    
+  <div id="drag4" style="position:absolute; left:39px; top:170px; width:142px; height:26px; z-index:3;">
+    <img name="img4" src="images/02070e.png" width="142" height="26" border="0" alt="Service Failures" /></div>
+</div>
+
+
+<div id="done" style="position:absolute; left:432px; top:461px; width:92px; height:37px;"><a href="javascript:judgeInteraction();"><img src="../sysimages/done_0.jpg" onmouseover="this.src='../sysimages/done_2.jpg'" onmouseout="this.src='../sysimages/done_0.jpg'" onmousedown="this.src='../sysimages/done_1.jpg'" width="92" height="37" alt="done button" /></a></div>
+
+<div id="dlinkPg" style="position:absolute; left:37px; top:501px; width:459px; height:20px;">
+  <a href="02070_508.html">Select this link for an alternative question format.</a>
+</div>
+
+<!-- Audio and CC buttons -->
+<div id="audioOn"><a href="javascript:toggleAudio();"><img src="../sysimages/audio_on_0.png" onmouseover="this.src='../sysimages/audio_on_2.png'" onmouseout="this.src='../sysimages/audio_on_0.png'" width="56" height="50" alt="audio is on." /></a></div>
+<div id="audioOff"><a href="javascript:toggleAudio();"><img src="../sysimages/audio_off_0.png" onmouseover="this.src='../sysimages/audio_off_2.png'" onmouseout="this.src='../sysimages/audio_off_0.png'" width="56" height="50" alt="audio is off." /></a></div>
+<div id="btnCC"><a href="javascript:show_cc()"><img src="../sysimages/cc_0.png" onmouseover="this.src='../sysimages/cc_2.png'" onmouseout="this.src='../sysimages/cc_0.png'" width="42" height="62" alt="closed caption" /></a></div>
+<!-- End of Audio and CC buttons -->
+
+<!-- bottom bar: Prompt, Back, Refresh, Next, Page number -->
+<div id="bottomBar">
+  <div id="pgNumber">Page 7 of 7</div>
+  
+  <div id="prompt">Drag the items on the left to the list on the right and then select DONE.</div>
+    
+  <div id="next"><a href="javascript:goNext()"><img src="../sysimages/next_0.png" onmouseover="this.src='../sysimages/next_2.png'" onmouseout="this.src='../sysimages/next_0.png'" width="74" height="51" alt="next" /></a></div>
+  
+  <div id="back"><a href="javascript:goBack()"><img src="../sysimages/back_0.png" onmouseover="this.src='../sysimages/back_2.png'" onmouseout="this.src='../sysimages/back_0.png'" width="74" height="51" alt="back" /></a></div>
+
+  <div id="refresh"><a href="javascript:refresh()"><img src="../sysimages/refresh_0.png" onmouseover="this.src='../sysimages/refresh_2.png'" onmouseout="this.src='../sysimages/refresh_0.png'" width="116" height="33" alt="refresh" /></a></div>
+  
+</div>
+<!-- End of bottom bar -->
+
+<!-- top bar: Menu, Glossary, Exit, Lesson title. Place it at the bottom for screen reader to read last -->
+<div id="topBar">
+  <div id="menu"><a href="javascript:parent.toMenu()"><img src="../sysimages/menu_0.jpg" onmouseover="this.src='../sysimages/menu_2.jpg'" onmouseout="this.src='../sysimages/menu_0.jpg'" width="81" height="37" alt="menu" /></a></div>
+  
+  <div id="glossary"><a href="javascript:openGlossary()"><img src="../sysimages/glossary_0.jpg" onmouseover="this.src='../sysimages/glossary_2.jpg'" onmouseout="this.src='../sysimages/glossary_0.jpg'" width="94" height="38" alt="glossary" /></a></div>
+  
+  <div id="exit"><a href="javascript:exitConfirm()"><img src="../sysimages/exit_0.jpg" onmouseover="this.src='../sysimages/exit_2.jpg'" onmouseout="this.src='../sysimages/exit_0.jpg'" width="74" height="37" alt="exit" /></a></div>
+  
+</div>
+<!-- End of top bar -->
+</div>
+
+<!-- Additonal code area if needed -->
+<script type="text/javascript">
+<!--
+
+SET_DHTML("targetHolder"+NO_DRAG,"dragHolder"+NO_DRAG,"container"+NO_DRAG,"img1"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+560+MAXOFFTOP+50+MAXOFFBOTTOM+160,"img2"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+560+MAXOFFTOP+100+MAXOFFBOTTOM+105,"img3"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+500+MAXOFFTOP+160+MAXOFFBOTTOM+70,"img4"+CURSOR_HAND+MAXOFFLEFT+20+MAXOFFRIGHT+500+MAXOFFTOP+210+MAXOFFBOTTOM+20,"target1"+NO_DRAG,"target2"+NO_DRAG,"target3"+NO_DRAG,"target4"+NO_DRAG);
+//NOTE: Set layers to draggable for this exercise does NOT work. 
+//		All draggable layers must be held in another layer like dragHolder in this example.
+
+var nObj = 4;
+var nCorrect = 4;
+var uCorrect = 0;
+var triesUser = 0;
+var triesLimit = 2;
+var fdbkCorrect, fdbkIncorrect0, fdbkIncorrect1, fdbkIncorrect2;
+fdbkCorrect = "<p>You got it.</p>  <p>You have identified the similarities between Disney and VISN 18.</p> <p>Close this window and then NEXT to continue.</p>";
+
+fdbkIncorrect0 = "<p>Before proceeding, you must complete the question.</p>";
+
+fdbkIncorrect1 = "<p>That's not it.  Why don't you try again?</p>";
+
+fdbkIncorrect2 = "<p>Well, that's not right either.</p>  <p>All of these factors are similarities between Disney and VISN 18.</p> <p>Close this window and then NEXT to continue.</p>";
+
+//Draggable objects are always in sequential order: img1, img2, ...
+//first nCorrect imgs are correct ones
+arrCorrect = new Array('img1','img2','img3','img4');	//must have nObj items
+arrUser = new Array(nObj);
+for (var i=0; i<nObj; i++) arrUser[i] = "";
+
+//-->
+</script>
+
+</body>
+</html>

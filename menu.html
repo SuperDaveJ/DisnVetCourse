@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Veteran Centered Care</title>
+<script type="text/javascript" src="scripts/disney_content.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.5.2.min.js"></script>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #76afdb;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	background:#FFF url(sysimages/main_menu.jpg) top center no-repeat;
+	position:relative;
+	width: 960px;
+	height: 573px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+.menu {
+	position:absolute;
+	left:245px;
+	top:165px;
+	width:160px;
+	height:310px;
+}
+
+-->
+</style>
+
+<script type="text/javascript">
+function updateMenu() {
+	for (i=1; i<=parent.nLessons; i++) {
+		if (parent.getLessonStatus(i) == 2 )
+			eval("document.getElementById('check" + i + "').style.visibility = 'visible'");
+	}
+}
+</script>
+
+</head>
+
+<body onload="updateMenu();">
+
+<div class="container">
+  <div class="menu">
+  	<div id="L1" style="position:absolute; left:0px; top:4px; width:156px; height:34px;"><a href="lesson1/01010.html"><img id="les1" src="sysimages/menu_lesson1_0.jpg" onmouseover="this.src='sysimages/menu_lesson1_2.jpg'" onmouseout="this.src='sysimages/menu_lesson1_0.jpg'" width="156" height="34" alt="Lesson 1: Course Introduction" /></a></div>
+	<div id="check1" style="position:absolute; left:0px; top:4px; width:32px; height:29px; z-index:11; visibility:hidden;"><img src="sysimages/checkmark.png" width="32" height="29" alt="checkmark" /></div>
+        
+  	<div id="L2" style="position:absolute; left:0px; top:42px; width:156px; height:34px;"><a href="lesson2/02010.html"><img id="les2" src="sysimages/menu_lesson2_0.jpg" onmouseover="this.src='sysimages/menu_lesson2_2.jpg'" onmouseout="this.src='sysimages/menu_lesson2_0.jpg'" width="156" height="34" alt="Lesson 2: Veteran Centered Care" /></a></div>
+	<div id="check2" style="position:absolute; left:0px; top:42px; width:32px; height:29px; z-index:11; visibility:hidden;"><img src="sysimages/checkmark.png" width="32" height="29" alt="checkmark" /></div>
+    
+  	<div id="L3" style="position:absolute; left:0px; top:80px; width:156px; height:34px;"><a href="lesson3/03010.html"><img id="les3" src="sysimages/menu_lesson3_0.jpg" onmouseover="this.src='sysimages/menu_lesson3_2.jpg'" onmouseout="this.src='sysimages/menu_lesson3_0.jpg'" width="156" height="34" alt="Lesson 3: The Disney Difference" /></a></div>
+	<div id="check3" style="position:absolute; left:0px; top:80px; width:32px; height:29px; z-index:11; visibility:hidden;"><img src="sysimages/checkmark.png" width="32" height="29" alt="checkmark" /></div>
+    
+  	<div id="L4" style="position:absolute; left:0px; top:118px; width:156px; height:34px;"><a href="lesson4/04010.html"><img id="les4" src="sysimages/menu_lesson4_0.jpg" onmouseover="this.src='sysimages/menu_lesson4_2.jpg'" onmouseout="this.src='sysimages/menu_lesson4_0.jpg'" width="156" height="34" alt="Lesson 4: Guestology" /></a></div>
+	<div id="check4" style="position:absolute; left:0px; top:118px; width:32px; height:29px; z-index:11; visibility:hidden;"><img src="sysimages/checkmark.png" width="32" height="29" alt="checkmark" /></div>
+    
+  	<div id="L5" style="position:absolute; left:0px; top:156px; width:156px; height:34px;"><a href="lesson5/05010.html"><img id="les5" src="sysimages/menu_lesson5_0.jpg" onmouseover="this.src='sysimages/menu_lesson5_2.jpg'" onmouseout="this.src='sysimages/menu_lesson5_0.jpg'" width="156" height="34" alt="Lesson 5: Common Purpose" /></a></div>
+ 	<div id="check5" style="position:absolute; left:0px; top:156px; width:32px; height:29px; z-index:11; visibility:hidden;"><img src="sysimages/checkmark.png" width="32" height="29" alt="checkmark" /></div>
+   
+  	<div id="L6" style="position:absolute; left:0px; top:194px; width:156px; height:34px;"><a href="lesson6/06010.html"><img id="les6" src="sysimages/menu_lesson6_0.jpg" onmouseover="this.src='sysimages/menu_lesson6_2.jpg'" onmouseout="this.src='sysimages/menu_lesson6_0.jpg'" width="156" height="34" alt="Lesson 6: Quality Standards" /></a></div>
+	<div id="check6" style="position:absolute; left:0px; top:194px; width:32px; height:29px; z-index:11; visibility:hidden;"><img src="sysimages/checkmark.png" width="32" height="29" alt="checkmark" /></div>
+    
+  	<div id="L7" style="position:absolute; left:0px; top:232px; width:156px; height:34px;"><a href="lesson7/07010.html"><img id="les7" src="sysimages/menu_lesson7_0.jpg" onmouseover="this.src='sysimages/menu_lesson7_2.jpg'" onmouseout="this.src='sysimages/menu_lesson7_0.jpg'" width="156" height="34" alt="Lesson 7: Creating Memorable Experiences" /></a></div>
+	<div id="check7" style="position:absolute; left:0px; top:232px; width:32px; height:29px; z-index:11; visibility:hidden;"><img src="sysimages/checkmark.png" width="32" height="29" alt="checkmark" /></div>
+    
+  	<div id="L8" style="position:absolute; left:0px; top:270px; width:156px; height:34px;"><a href="lesson8/08010.html"><img id="les8" src="sysimages/menu_lesson8_0.jpg" onmouseover="this.src='sysimages/menu_lesson8_2.jpg'" onmouseout="this.src='sysimages/menu_lesson8_0.jpg'" width="156" height="34" alt="Lesson 8: Why is Veteran Centered Care Important to Me?" /></a></div>
+	<div id="check8" style="position:absolute; left:0px; top:270px; width:32px; height:29px; z-index:11; visibility:hidden;"><img src="sysimages/checkmark.png" width="32" height="29" alt="checkmark" /></div>
+
+<div id="exit" style="position:absolute; left:178px; top:366px; width:92px; height:37px;"><a href="javascript:exitConfirm()"><img src="sysimages/exit_0.png" onmouseover="this.src='sysimages/exit_2.png'" onmouseout="this.src='sysimages/exit_0.png'" onmousedown="this.src='sysimages/exit_1.png'" width="92" height="37" alt="exit" /></a></div>    
+  <!-- end .menu --></div>
+  <!-- end .container --></div>
+</body>
+</html>

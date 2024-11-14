@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<manifest identifier="OPM_Disney" version="1.1"
+	xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+	xmlns:imsmd = "http://www.imsglobal.org/xsd/imsmd_v1p2" 
+	xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+						http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+						http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+<metadata>
+   <schema>ADL SCORM</schema>
+   <schemaversion>1.2</schemaversion>
+   <imsmd:lom> 
+      <imsmd:general> 
+         <imsmd:title> 
+            <imsmd:langstring lang = "en_US">Disney Institute and End User</imsmd:langstring> 
+         </imsmd:title> 
+         <imsmd:description> 
+            <imsmd:langstring Lang = "en_US">
+               The instructional goal for this Course is to introduce learners to methods for delivering quality service to Veterans and provide them with skills and tools that can help them construct a Quality Service Plan for VISN 18.
+            </imsmd:langstring> 
+          </imsmd:description> 
+          <imsmd:keywords> 
+            <imsmd:langstring Lang = "en_US">Disney</imsmd:langstring>
+            <imsmd:langstring Lang = "en_US">quality service</imsmd:langstring>
+          </imsmd:keywords> 
+      </imsmd:general> 
+   </imsmd:lom> 
+</metadata>
+
+<organizations default = "Disney">
+  <organization identifier = "Disney">
+	 <title><![CDATA[Disney Institute and End User]]></title>
+	 <item identifier ="VCC" identifierref ="VCC_ref" isvisible = "true">
+		  <title><![CDATA[Veteran Centered Care]]></title>
+	 </item>
+  </organization>
+</organizations>
+
+<resources>
+  <resource identifier ="VCC_ref" type = "webcontent" adlcp:scormtype ="sco" href="index.html">
+	<file href = "index.html"/>
+	<file href = "loading.html"/>
+	<file href = "bottomEmpty.html"/>
+	<file href = "menu.html"/>
+	<file href = "splash.html"/>
+	<file href = "glossary.html"/>
+	<file href = "lesson1/01010.html"/>
+	<file href = "lesson2/02010.html"/>
+	<file href = "lesson3/03010.html"/>
+	<file href = "lesson4/04010.html"/>
+	<file href = "lesson5/05010.html"/>
+	<file href = "lesson6/06010.html"/>
+	<file href = "lesson7/07010.html"/>
+	<file href = "lesson8/08010.html"/>
+  </resource>
+</resources>
+
+</manifest>
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/disney_base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../styles/disney.css" />
+<link rel="stylesheet" type="text/css" href="../shadowbox/shadowbox.css">
+<script type="text/javascript" src="../shadowbox/shadowbox.js"></script>
+<script type="text/javascript" src="../scripts/disney_content.js"></script>
+<script type="text/javascript" src="../scripts/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="../scripts/jqFunctions.js"></script>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Veteran Centered Care</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+
+<link rel="stylesheet" type="text/css" href="../styles/grid.css" />
+
+<script type="text/javascript">
+	blnAudio = false;
+	nextPg = "04120.html";
+	backPg = "04100.html";
+
+	function goNext() {
+		parent.gotoPage(nextPg);
+	}
+	
+	function goBack() {
+		parent.gotoPage(backPg);
+	}
+	
+	function initializePage() {
+		//showCC_Button();
+	}
+
+/******************Click grid variables*****************/	
+var nRows, nCols
+nRows = 4;	//does not include the first row which is for column title
+nCols = 4;	//does not include the first column which is for text
+strCorrectRow1 = "0,0,1,0";		//correct answer for row 1.
+strCorrectRow2 = "0,1,0,0";		//correct answer for row 2.
+strCorrectRow3 = "0,0,0,1";		//correct answer for row 3.
+strCorrectRow4 = "1,0,0,0";		//correct answer for row 4.
+
+arrCorrectAns = new Array(nRows);
+arrUserAns = new Array(nRows);
+for (var i=0; i<nRows; i++) {
+	arrCorrectAns[i] = new Array(nCols);
+	arrUserAns[i] = new Array(nCols);
+	for (var j=0; j<nCols; j++) arrUserAns[i][j] = 0
+	arrCorrectAns[i] = eval('strCorrectRow'+ (i+1) +'.split(",")')
+}
+
+lastCFdbk = "<p>Terrific.</p>  <p>You have correctly matched each healthcare example with a point on the Compass.</p> <p>Close this window and then NEXT to continue.</p>";
+
+firstWFdbk = "<p>One or more of your answers is incorrect. Why don't you try again?</p>";
+
+lastWFdbk = "<p>Well, that's not right either</p>  <p>The correct answers are now displayed.</p> <p>Close this window and then NEXT to continue.</p>";
+
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body onload="initializePage()">
+<div id="container">
+
+<div id="lessonTitle">
+<!-- InstanceBeginEditable name="LessonTitleImg" -->
+<div id="ltImg" style="position:absolute; top:0px;"><img src="../sysimages/title_less4.png" width="101" height="33" alt="Guestology" /></div>
+<!-- InstanceEndEditable -->
+</div>
+  
+<!-- Content Area -->
+<div id="contentArea">
+<!-- InstanceBeginEditable name="Content" -->
+<div id="pgTitle"><h1 class="pgTitle">Knowledge Review</h1></div>
+
+<div id="contentFullScreen">
+
+<p>Match each healthcare example with a point on the Compass by selecting the appropriate cell in the table below. </p>
+
+<div id="grid" style="position:absolute; left:0px; top:60px; width:100%; height:200px;">
+<form name="qForm">
+<table id="qTable" width="800" border="0" cellspacing="0" cellpadding="8" align="center">
+  <tr>
+  	<td scope="row" width="210" class='gridFirstCell'>Healthcare Example</td>
+  	<td width="140" class='top'>Needs</td>
+  	<td width="140" class='top'>Wants</td>
+  	<td width="140" class='top'>Stereotypes</td>
+  	<td width="140" class='top'>Emotions</td>
+  </tr>
+
+  <tr>
+  	<td scope="row" class='spacer'><span class='spacer'></span></td>
+  	<td class='spacer'><span class='spacer'></span></td>
+  	<td class='spacer'><span class='spacer'></span></td>
+  	<td class='spacer'><span class='spacer'></span></td>
+  	<td class='spacer'><span class='spacer'></span></td>
+  </tr>
+  
+  <tr>
+  	<td scope="row" class='colLeft'>No Privacy</td>
+  	<td align='center' class='other'><input name='row1' type='radio' title='Needs matches No Privacy.' tabindex='11' /></td>
+  	<td align='center' class='other'><input name='row1' type='radio' title='Wants matches No Privacy.' tabindex='12' /></td>
+  	<td align='center' class='other'><input name='row1' type='radio' title='Stereotypes matches No Privacy.' tabindex='13' /></td>
+  	<td align='center' class='other'><input name='row1' type='radio' title='Emotions matches No Privacy.' tabindex='14' /></td>
+  </tr>
+
+  <tr>
+  	<td scope="row" class='colLeft'>To get well</td>
+  	<td align='center' class='other'><input name='row2' type='radio' title='Needs matches To get well.' tabindex='15' /></td>
+  	<td align='center' class='other'><input name='row2' type='radio' title='Wants matches To get well.' tabindex='16' /></td>
+  	<td align='center' class='other'><input name='row2' type='radio' title='Stereotypes matches To get well.' tabindex='17' /></td>
+  	<td align='center' class='other'><input name='row2' type='radio' title='Emotions matches To get well.' tabindex='18' /></td>
+  </tr>
+
+  <tr>
+  	<td scope="row" class='colLeft'>Anxiety</td>
+  	<td align='center' class='other'><input name='row3' type='radio' title='Needs matches Anxiety.' tabindex='19' /></td>
+  	<td align='center' class='other'><input name='row3' type='radio' title='Wants matches Anxiety.' tabindex='20' /></td>
+  	<td align='center' class='other'><input name='row3' type='radio' title='Stereotypes matches Anxiety.' tabindex='21' /></td>
+  	<td align='center' class='other'><input name='row3' type='radio' title='Emotions matches Anxiety.' tabindex='22' /></td>
+  </tr>
+
+  <tr>
+  	<td scope="row" class='left_bottom'>Medical Care</td>
+  	<td align='center' class='bottom'><input name='row4' type='radio' title='Needs matches Medical Care.' tabindex='23' /></td>
+  	<td align='center' class='bottom'><input name='row4' type='radio' title='Wants matches Medical Care.' tabindex='24' /></td>
+  	<td align='center' class='bottom'><input name='row4' type='radio' title='Stereotypes matches Medical Care.' tabindex='25' /></td>
+  	<td align='center' class='bottom'><input name='row4' type='radio' title='Emotions matches Medical Care.' tabindex='26' /></td>
+  </tr>
+
+</table>
+</form>
+</div>
+
+<div id="done" style="position:absolute; left:0; top:300px; width:100%; height:24px; text-align:center;">
+  <a href="javascript:judgeInteraction()" tabindex='27'>
+    <img src='../sysimages/done_0.jpg' alt='Done button' id='Done' name='Done' onmouseover='this.src="../sysimages/done_2.jpg"' onmouseout='this.src="../sysimages/done_0.jpg"' onmousedown='this.src="../sysimages/done_1.jpg"' width='92' height='37' border='0' /></a>
+</div>
+
+
+</div>
+
+<script type="text/javascript" src="../scripts/grid.js"></script>
+
+<!-- CC background and text -->
+<!-- End of CC background and text -->
+
+<!-- InstanceEndEditable -->
+</div>
+<!-- End of Content Area -->
+<!-- Audio and CC buttons -->
+<div id="audioOn"><a href="javascript:toggleAudio();"><img src="../sysimages/audio_on_0.png" onmouseover="this.src='../sysimages/audio_on_2.png'" onmouseout="this.src='../sysimages/audio_on_0.png'" width="56" height="50" alt="audio is on." /></a></div>
+<div id="audioOff"><a href="javascript:toggleAudio();"><img src="../sysimages/audio_off_0.png" onmouseover="this.src='../sysimages/audio_off_2.png'" onmouseout="this.src='../sysimages/audio_off_0.png'" width="56" height="50" alt="audio is off." /></a></div>
+<div id="btnCC"><a href="javascript:show_cc()"><img src="../sysimages/cc_0.png" onmouseover="this.src='../sysimages/cc_2.png'" onmouseout="this.src='../sysimages/cc_0.png'" width="42" height="62" alt="closed caption" /></a></div>
+<!-- End of Audio and CC buttons -->
+
+<!-- bottom bar: Prompt, Back, Refresh, Next, Page number -->
+<div id="bottomBar">
+  <div id="pgNumber"><!-- InstanceBeginEditable name="PageNumber" -->Page 11 of 12<!-- InstanceEndEditable --></div>
+  
+  <div id="prompt"><!-- InstanceBeginEditable name="Prompt" -->Correctly match the items and then select DONE.<!-- InstanceEndEditable --></div>
+    
+  <div id="next"><a href="javascript:goNext()"><img src="../sysimages/next_0.png" onmouseover="this.src='../sysimages/next_2.png'" onmouseout="this.src='../sysimages/next_0.png'" width="74" height="51" alt="next" /></a></div>
+  
+  <div id="back"><a href="javascript:goBack()"><img src="../sysimages/back_0.png" onmouseover="this.src='../sysimages/back_2.png'" onmouseout="this.src='../sysimages/back_0.png'" width="74" height="51" alt="back" /></a></div>
+
+  <div id="refresh"><a href="javascript:refresh()"><img src="../sysimages/refresh_0.png" onmouseover="this.src='../sysimages/refresh_2.png'" onmouseout="this.src='../sysimages/refresh_0.png'" width="116" height="33" alt="refresh" /></a></div>
+  
+</div>
+<!-- End of bottom bar -->
+
+<!-- top bar: Menu, Glossary, Exit, Lesson title. Place it at the bottom for screen reader to read last -->
+<div id="topBar">
+  <div id="menu"><a href="javascript:parent.toMenu()"><img src="../sysimages/menu_0.jpg" onmouseover="this.src='../sysimages/menu_2.jpg'" onmouseout="this.src='../sysimages/menu_0.jpg'" width="81" height="37" alt="menu" /></a></div>
+  
+  <div id="glossary"><a href="javascript:openGlossary()"><img src="../sysimages/glossary_0.jpg" onmouseover="this.src='../sysimages/glossary_2.jpg'" onmouseout="this.src='../sysimages/glossary_0.jpg'" width="94" height="38" alt="glossary" /></a></div>
+  
+  <div id="exit"><a href="javascript:exitConfirm()"><img src="../sysimages/exit_0.jpg" onmouseover="this.src='../sysimages/exit_2.jpg'" onmouseout="this.src='../sysimages/exit_0.jpg'" width="74" height="37" alt="exit" /></a></div>
+  
+</div>
+<!-- End of top bar -->
+
+<!-- Additonal code area if needed -->
+<!-- InstanceBeginEditable name="AdditionalJavaScript" -->
+
+<script type="text/javascript">
+</script>
+<!-- InstanceEndEditable -->
+</div> <!-- end of container -->
+</body>
+<!-- InstanceEnd --></html>

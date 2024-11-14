@@ -1,0 +1,478 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+body {
+	background-color:#fff;
+	font-family: Georgia, "Times New Roman", Times, serif
+	font-size:17px;
+	line-height:21px;
+	font-weight:normal;
+	color:#000;
+}
+
+#container {
+	background:url(../sysimages/Dis_less_back.jpg) top left no-repeat;
+	background-color:#fff;
+	position:relative;
+	width: 960px;
+	height: 573px;
+	margin: 0 auto;
+}
+
+p {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:17px;
+	font-weight:normal;
+	line-height:21px;
+	color:#000;
+	padding: 0 0 15px 0;
+}
+
+p.compact {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:17px;
+	font-weight:normal;
+	line-height:21px;
+	color:#000;
+	padding: 0 0 6px 0;
+}
+
+/* CC Text block */
+#cc_box {
+	background:url(../sysimages/cc_box.png) top left no-repeat;
+	position:absolute;
+	left:-8px;
+	top:372px;
+	width:512px;
+	height:65px;
+	visibility:hidden;
+}
+
+#cc_box #cc_txt {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	position:absolute;
+	left:50px;
+	top:7px;
+	width:445px;
+	height:50px;
+	font-size:13px;
+	font-weight:normal;
+	overflow:auto;
+	color:#605015;
+	padding-right:5px;
+}
+
+li.cc {
+	font-size:13px;
+	font-weight:normal;
+	line-height:16px;
+	color:#605015;
+	margin: 0 0 0 12px;
+	padding: 5px 0 0 0 ;
+}
+
+p.ccTitle {
+	font-size:13px;
+	font-weight:bold;
+	color:#605015;
+	padding:0px;
+}
+p.cc, ul.cc, ol.cc {
+	font-size:13px;
+	font-weight:normal;
+	color:#605015;
+	padding:5px 0 0 0;
+}
+/* end of CC Text block */
+
+/* Audio buttons */
+#audioButtons {
+ 	position:absolute; 
+	left:818px; 
+	top:54px; 
+	width:107px; 
+	height:62px;
+	visibility:hidden;
+}
+#audioOn {
+	position:absolute; 
+	left:818px; 
+	top:54px; 
+	width:56px; 
+	height:50px;
+	visibility:hidden;
+}
+#audioOff {
+	position:absolute; 
+	left:818px; 
+	top:54px; 
+	width:56px; 
+	height:50px;
+	visibility:hidden;
+}
+#btnCC {
+	position:absolute; 
+	left:882px; 
+	top:55px; 
+	width:42px; 
+	height:62px;
+	visibility:hidden;
+}
+/* End of Audio buttons */
+
+ul, ol, li {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:17px;
+	font-weight:normal;
+	line-height:21px;
+	margin: 0 0 0 16px;
+	padding: 0 0 10px 0;
+}
+
+ul.compact, ol.compact, li.compact {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:17px;
+	font-weight:normal;
+	line-height:21px;
+	margin: 0 0 0 16px;
+	padding: 0 0 5px 0;
+}
+
+a:active, a:link {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 17px;
+	color: #0639f8;
+	text-decoration: none;
+	outline: none;
+}
+
+a:visited {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #5c050d;
+	line-height: 17px;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color:#2d86ff;
+	text-decoration:underline;
+}
+
+/* Shadowbox visited links */
+a.sb {
+	color: #5c050d;
+}
+a.sb:hover {
+	color:#2d86ff;
+	text-decoration:underline;
+}
+/* End of Shadowbox visited links */
+
+a.cc, a.cc:visited, a.cc:hover, a.cc:active {
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #5c050d;
+	text-decoration: none;
+	outline: none;
+}
+a.cc:hover {
+	color:#2d86ff;
+	text-decoration:underline;
+}
+
+/******************** topBar ***********************/
+#topBar {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:960px;
+	height:90px;
+}
+
+#topBar #menu {
+	position:absolute;
+	left:593px;
+	top:0px;
+	width:80px;
+	height:30px;
+	z-index:1;
+}
+
+#topBar #glossary {
+	position:absolute;
+	left:674px;
+	top:0px;
+	width:94px;
+	height:31px;
+	z-index:1;
+}
+
+#topBar #exit {
+	position:absolute;
+	left:769px;
+	top:0px;
+	width:74px;
+	height:30px;
+	z-index:1;
+}
+
+#lessonTitle {
+	position:absolute;
+	left:40px;
+	top:47px;
+	width:415px;
+	height:35px;
+	z-index:1;
+}
+
+/**************** End of topBar ***********************/
+
+/**************** bottomBar ***********************/
+#bottomBar {
+	position:absolute;
+	left:0px;
+	top:505px;
+	width:960px;
+	height:68px;
+}
+
+#bottomBar #prompt {
+	position:absolute;
+	left:70px;
+	top:43px;
+	width:600px;
+	height:20px;
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	font-size:13px;
+	font-weight:bold;
+	color:#f9db6d;
+	z-index:1;
+}
+
+#bottomBar #back {
+	position:absolute;
+	left:642px;
+	top:8px;
+	width:74px;
+	height:51px;
+	visibility:visible;
+}
+
+#bottomBar #refresh {
+	position:absolute;
+	left:694px;
+	top:34px;
+	width:116px;
+	height:33px;
+	visibility:visible;
+}
+
+#bottomBar #next {
+	position:absolute;
+	left:787px;
+	top:8px;
+	width:74px;
+	height:51px;
+	visibility:visible;
+}
+
+#bottomBar #pgNumber {
+	position:absolute;
+	left:850px;
+	top:45px;
+	width:90px;
+	height:51px;
+	font-family: "Trebuchet MS", Tahoma, Arial;
+	font-size:12px;
+	text-align:right;
+	color:#fff;
+	visibility:visible;
+}
+/**************** End of bottomBar ***********************/
+
+/**************** Content Area ***************************/
+#contentArea {
+	position:absolute;
+	left:42px;
+	top:92px;
+	width:877px;
+	height:413px;
+}
+
+#contentArea #pgTitle {
+	position:absolute;
+	left:9px;
+	top:25px;
+	width:447px;
+	height:20px;
+}
+
+h1.pgTitle {
+	font-family:"Trebuchet MS", Tahoma, Arial;
+	font-size:21px;
+	font-weight:normal;
+	line-height:21px;
+	color:#826d20;
+}
+
+#contentArea #contentFullScreen {
+	position:relative;
+	left:9px;
+	top:68px;
+	width:868px;
+	height:330px;
+}
+
+#contentArea #leftTxt {
+	position:absolute;
+	left:9px;
+	top:68px;
+	width:447px;
+	height:330px;
+}
+#contentArea #rightImg {
+	position:absolute;
+	left:468px;
+	top:19px; /* Nathan gives 29px */
+	width:408px;
+	height:384px;
+	text-align:center;
+}
+
+#contentArea #rightImg_lower {
+	position:absolute;
+	left:468px;
+	top:40px;
+	width:408px;
+	height:384px;
+	text-align:left;
+}
+
+#contentArea #pgTitle_right {
+	position:relative;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:27px;
+}
+
+#contentArea #leftImg {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:419px;
+	height:359px;
+	text-align:left;
+}
+#contentArea #leftImg_lower {
+	position:absolute;
+	left:0px;
+	top:20px;
+	width:419px;
+	height:339px;
+	text-align:left;
+}
+#contentArea #rightTxt {
+	position:absolute;
+	left:431px;
+	top:41px;
+	width:436px;
+	height:318px;
+	text-align:left;
+}
+
+/* Expert response input and answer */
+.expertTxt {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#53491f;
+}
+p.expertTxt, ul.expertTxt, ol.expertTxt {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#53491f;
+	padding:5px 0 0 0;
+}
+
+li.expertTxt {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:normal;
+	line-height:14px;
+	color:#53491f;
+	margin: 0 0 0 12px;
+	padding:0 0 10px 0;
+}
+
+
+.inputTxt {
+	background-color: transparent;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#0b283d;
+	padding:5px;
+	overflow:hidden;
+}
+/* End of Expert response input and answer */
+
+/**************** End of Content Area ***************************/
+
+#dlink {
+	position:absolute;
+	left:900px;
+	top:514px;
+	width:20px;
+	height:20px;
+	z-index:10;
+	visibility:hidden;
+}
+
+#noneDisplay {
+	position:absolute;
+	left:-500px;
+	top:700px;
+	width:2px;
+	height:2px;
+}
+
+/* Comment Links */
+#comment_link {
+	position: absolute;
+	top:660px;
+	left:360px;
+	width:490px;
+	height:20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	color: black;
+	z-index:10;
+}
+
+#comment_link #add_comment {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#comment_link #view_comment {
+	position: absolute;
+	top:0;
+	left: 150px;
+	text-align: right;
+}
+
+/* End of Comment Links */

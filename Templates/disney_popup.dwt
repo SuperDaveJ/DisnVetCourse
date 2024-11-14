@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../styles/popup.css">
+<title>Popup Text</title>
+</head>
+
+<body>
+<div id="popTitle"><h1 class="popupH"><!-- TemplateBeginEditable name="PopupTitle" -->PopupTitle<!-- TemplateEndEditable --></h1>
+</div>
+
+<div id="popText"><!-- TemplateBeginEditable name="PopupText" -->PopupText<!-- TemplateEndEditable -->
+
+</div>
+
+<div id="popClose"><a href="javascript:parent.Shadowbox.close()"><img src="../shadowbox/pop_cnt_exit_0.jpg" onmouseover="this.src='../shadowbox/pop_cnt_exit_2.jpg'" onmouseout="this.src='../shadowbox/pop_cnt_exit_0.jpg'" width="63" height="58" border="0" alt="close" /></a></div>
+
+</body>
+</html>
